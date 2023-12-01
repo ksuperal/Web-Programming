@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+    <head><title>HW3</title></head>
+    <style>
+        h2 {text-align: center; font-size: 160%;}
+        p {font-size: 115%;}
+        td {border-bottom: 0; border-top: 0;}
+    </style>
+    <body>
+        <h2>(Unofficial Transcript)</h2>
+        <table style="width: 90%;" align="center" cellspacing="0" cellpadding="5">
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td style="font-size: 130%; vertical-align: top;">&emsp;
+                        School of Engineering</td>
+                    <td rowspan="2">
+                        <img src="roshan.jpg" width="150" alt="Photo" style="float: right; vertical-align: text-bottom; clear: both;">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="vertical-align: bottom;">
+                        <p><label for="Name" style="font-style: italic;"><b>Name&emsp;</b></label>
+                            <input type="text" id="Name" name="Name" required placeholder="Mr./Miss Nxxxx Xxxxxxx" style="width: 20%;">
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><label for="BD" style="font-style: italic;"><b>Date of Birth&emsp;</b>
+                            <input type="date" id="BD" name="BD" min="1995" max="2010" required style="width: 28%;">
+                        </p>
+                    </td>
+                    <td align="center">
+                        <p><label for="ID" style="font-style: italic;"><b>Student ID&emsp;</b></label>
+                            <input type="text" id="ID" name="ID" required placeholder="65xxxxxx" style="width: 28%;">
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><label for="AdDate" style="font-style: italic;"><b>Date of Admission&emsp;</b></label>
+                            <input type="text" id="AdDate" name="AdDate" required placeholder="20xx" style="width: 20%;">
+                        </p>
+                    </td>
+                    <td align="center">
+                        <p><label for="GradDate" style="font-style: italic;"><b>Date of Graduation&emsp;</b></label>
+                            <input type="text" id="GradDate" name="GradDate" required placeholder="N/A" style="width: 15%;">
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><label for="degree" style="font-style: italic;"><b>Degree&emsp;</b></label>
+                            <input type="text" id="degree" name="degree" required placeholder="Bachelor of Engineering" style="width: 38%;">
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><label for="major" style="font-style: italic;"><b>Major&emsp;</b></label>
+                            <input type="text" id="major" name="major" required placeholder="Software Engineering" style="width: 40%;">
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table style="width: 90%; border-collapse: collapse;" border="solid" align="center" cellspacing="0" cellpadding="5">
+            <thead>
+                <tr>
+                    <th style="width: 40%;">Course Title</th>
+                    <th style="width: 5%;">Credit</th>
+                    <th style="width: 5%;">Grade</th>
+                    <th style="width: 40%;">Course Title</th>
+                    <th style="width: 5%;">Credit</th>
+                    <th style="width: 5%;">Grade</th>
+                </tr>
+            </thead>
+            <tbody align="center">
+                <tr>
+                    <td><strong><u>Transfer Credit</u></strong></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="num1" required placeholder="13006208" style="width: 13%;">
+                        <input type="text" name="subj1" required placeholder="ACADEMIC ENGLISH 1" style="width: 82%;">
+                    </td>
+                    <td><input type="text" name="c1" required placeholder="3" style="width: 15%;"></td>
+                    <td><input type="text" name="g1" required placeholder="X" style="width: 15%;"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="num2" required placeholder="13006209" style="width: 13%;">
+                        <input type="text" name="subj2" required placeholder="ACADEMIC ENGLISH 2" style="width: 82%;">
+                    </td>
+                    <td><input type="text" name="c2" required placeholder="3" style="width: 15%;"></td>
+                    <td><input type="text" name="g2" required placeholder="X" style="width: 15%;"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="font-style: italic; font-weight: bold;">
+                        GPA:&nbsp;
+                        <input type="text" id="gpa1" name="gpa1" required placeholder="X.XX" style="width: 7%;">
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;"><u>1st Semester, Year, 2021-2022</u></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="num1_sem1_21" required placeholder="13006007" style="width: 13%;">
+                        <input type="text" name="subj1_sem1_21" required placeholder="CALCULUS 1" style="width: 82%;">
+                    </td>
+                    <td><input type="text" name="c1_sem1_21" required placeholder="3" style="width: 15%;"></td>
+                    <td><input type="text" name="g1_sem1_21" required placeholder="X" style="width: 15%;"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="num2_sem1_21" required placeholder="13006107" style="width: 13%;">
+                        <input type="text" name="subj2_sem1_21" required placeholder="INTRODUCTION TO COMPUTERS AND PROGRAMMING" style="width: 82%;">
+                    </td>
+                    <td><input type="text" name="c2_sem1_21" required placeholder="4" style="width: 15%;"></td>
+                    <td><input type="text" name="g2_sem1_21" required placeholder="X" style="width: 15%;"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="num3_sem1_21" required placeholder="13006108" style="width: 13%;">
+                        <input type="text" name="subj3_sem1_21" required placeholder="BASIC ELECTRICITY AND ELECTRONICS" style="width: 82%;">
+                    </td>
+                    <td><input type="text" name="c3_sem1_21" required placeholder="3" style="width: 15%;"></td>
+                    <td><input type="text" name="g3_sem1_21" required placeholder="X" style="width: 15%;"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="num4_sem1_21" required placeholder="13006301" style="width: 13%;">
+                        <input type="text" name="subj4_sem1_21" required placeholder="INTRODUCTION TO LOGIC" style="width: 82%;">
+                    </td>
+                    <td><input type="text" name="c4_sem1_21" required placeholder="3" style="width: 15%;"></td>
+                    <td><input type="text" name="g4_sem1_21" required placeholder="X" style="width: 15%;"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="num5_sem1_21" required placeholder="13016235" style="width: 13%;">
+                        <input type="text" name="subj5_sem1_21" required placeholder="C PROGRAMMING" style="width: 82%;">
+                    </td>
+                    <td><input type="text" name="c5_sem1_21" required placeholder="3" style="width: 15%;"></td>
+                    <td><input type="text" name="g5_sem1_21" required placeholder="X" style="width: 15%;"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="num6_sem1_21" required placeholder="13016236" style="width: 13%;">
+                        <input type="text" name="subj6_sem1_21" required placeholder="C PROGRAMMING LABORATORY" style="width: 82%;">
+                    </td>
+                    <td><input type="text" name="c6_sem1_21" required placeholder="1" style="width: 15%;"></td>
+                    <td><input type="text" name="g6_sem1_21" required placeholder="X" style="width: 15%;"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="font-style: italic; font-weight: bold;">
+                        GPS:&nbsp;
+                        <input type="text" name="gps_sem1_21" required placeholder="X.XX" style="width: 7%;">&emsp;&emsp;
+                        GPA:&nbsp;
+                        <input type="text" name="gpa_sem1_21" required placeholder="X.XX" style="width: 7%;">
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;"><u>2nd Semester, Year, 2021-2022</u></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="num1_sem2_21" required placeholder="13006008" style="width: 13%;">
+                        <input type="text" name="subj1_sem2_21" required placeholder="CALCULUS 2" style="width: 82%;">
+                    </td>
+                    <td><input type="text" name="c1_sem2_21" required placeholder="3" style="width: 15%;"></td>
+                    <td><input type="text" name="g1_sem2_21" required placeholder="X" style="width: 15%;"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="num2_sem2_21" required placeholder="13006303" style="width: 13%;">
+                        <input type="text" name="subj2_sem2_21" required placeholder="CULTURAL STUDIES" style="width: 82%;">
+                    </td>
+                    <td><input type="text" name="c2_sem2_21" required placeholder="3" style="width: 15%;"></td>
+                    <td><input type="text" name="g2_sem2_21" required placeholder="X" style="width: 15%;"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="num3_sem2_21" required placeholder="13016105" style="width: 13%;">
+                        <input type="text" name="subj3_sem2_21" required placeholder="DISCRETE MATHEMATICS" style="width: 82%;">
+                    </td>
+                    <td><input type="text" name="c3_sem2_21" required placeholder="3" style="width: 15%;"></td>
+                    <td><input type="text" name="g3_sem2_21" required placeholder="X" style="width: 15%;"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="num4_sem2_21" required placeholder="13016204" style="width: 13%;">
+                        <input type="text" name="subj4_sem2_21" required placeholder="DIGITAL CIRCUIT AND LOGIC DESIGN" style="width: 82%;">
+                    </td>
+                    <td><input type="text" name="c4_sem2_21" required placeholder="3" style="width: 15%;"></td>
+                    <td><input type="text" name="g4_sem2_21" required placeholder="X" style="width: 15%;"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="num5_sem2_21" required placeholder="13016205" style="width: 13%;">
+                        <input type="text" name="subj5_sem2_21" required placeholder="DIGITAL CIRCUIT LABORATORY" style="width: 82%;">
+                    </td>
+                    <td><input type="text" name="c5_sem2_21" required placeholder="1" style="width: 15%;"></td>
+                    <td><input type="text" name="g5_sem2_21" required placeholder="X" style="width: 15%;"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="num6_sem2_21" required placeholder="13016209" style="width: 13%;">
+                        <input type="text" name="subj6_sem2_21" required placeholder="OBJECT-ORIENTED CONCEPTS AND PROGRAMMING" style="width: 82%;">
+                    </td>
+                    <td><input type="text" name="c6_sem2_21" required placeholder="3" style="width: 15%;"></td>
+                    <td><input type="text" name="g6_sem2_21" required placeholder="X" style="width: 15%;"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="num7_sem2_21" required placeholder="13016210" style="width: 13%;">
+                        <input type="text" name="subj7_sem2_21" required placeholder="OBJECT-ORIENTED PROGRAMMING LABORATORY" style="width: 82%;">
+                    </td>
+                    <td><input type="text" name="c7_sem2_21" required placeholder="1" style="width: 15%;"></td>
+                    <td><input type="text" name="g7_sem2_21" required placeholder="X" style="width: 15%;"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="font-style: italic; font-weight: bold;">
+                        GPS:&nbsp;
+                        <input type="text" name="gps_sem2_21" required placeholder="X.XX" style="width: 7%;">&emsp;&emsp;
+                        GPA:&nbsp;
+                        <input type="text" name="gpa_sem2_21" required placeholder="X.XX" style="width: 7%;">
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;"><u>1st Semester, Year, 2022-2023</u></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="num1_sem1_22" required placeholder="13006006" style="width: 13%;">
+                        <input type="text" name="subj1_sem1_22" required placeholder="LINEAR ALGEBRA" style="width: 82%;">
+                    </td>
+                    <td><input type="text" name="c1_sem1_22" required placeholder="3" style="width: 15%;"></td>
+                    <td><input type="text" name="g1_sem1_22" required placeholder="X" style="width: 15%;"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="num2_sem1_22" required placeholder="13006210" style="width: 13%;">
+                        <input type="text" name="subj2_sem1_22" required placeholder="TECHNICAL WRITING" style="width: 82%;">
+                    </td>
+                    <td><input type="text" name="c2_sem1_22" required placeholder="4" style="width: 15%;"></td>
+                    <td><input type="text" name="g2_sem1_22" required placeholder="X" style="width: 15%;"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="num3_sem1_22" required placeholder="13006403" style="width: 13%;">
+                        <input type="text" name="subj3_sem1_22" required placeholder="BUSINESS ADMINISTRATION" style="width: 82%;">
+                    </td>
+                    <td><input type="text" name="c3_sem1_22" required placeholder="3" style="width: 15%;"></td>
+                    <td><input type="text" name="g3_sem1_22" required placeholder="X" style="width: 15%;"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="num4_sem1_22" required placeholder="13016207" style="width: 13%;">
+                        <input type="text" name="subj4_sem1_22" required placeholder="COMPUTER ORGANIZATION AND ASSEMBLY LANGUAGE" style="width: 82%;">
+                    </td>
+                    <td><input type="text" name="c4_sem1_22" required placeholder="3" style="width: 15%;"></td>
+                    <td><input type="text" name="g4_sem1_22" required placeholder="X" style="width: 15%;"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="num5_sem1_22" required placeholder="13016208" style="width: 13%;">
+                        <input type="text" name="subj5_sem1_22" required placeholder="COMPUTER ORGANIZATION AND ASSEMBLY LANGUAGE LABORATORY" style="width: 82%;">
+                    </td>
+                    <td><input type="text" name="c5_sem1_22" required placeholder="1" style="width: 15%;"></td>
+                    <td><input type="text" name="g5_sem1_22" required placeholder="X" style="width: 15%;"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="num6_sem1_22" required placeholder="13016212" style="width: 13%;">
+                        <input type="text" name="subj6_sem1_22" required placeholder="DATA STRUCTURES AND ALGORITHMS" style="width: 82%;">
+                    </td>
+                    <td><input type="text" name="c6_sem1_22" required placeholder="1" style="width: 15%;"></td>
+                    <td><input type="text" name="g6_sem1_22" required placeholder="X" style="width: 15%;"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="num7_sem1_22" required placeholder="13016213" style="width: 13%;">
+                        <input type="text" name="subj7_sem1_22" required placeholder="DATA STRUCTURES AND ALGORITHMS LABORATORY" style="width: 82%;">
+                    </td>
+                    <td><input type="text" name="c7_sem1_22" required placeholder="1" style="width: 15%;"></td>
+                    <td><input type="text" name="g7_sem1_22" required placeholder="X" style="width: 15%;"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="num8_sem1_22" required placeholder="13016249" style="width: 13%;">
+                        <input type="text" name="subj8_sem1_22" required placeholder="ADVANCED OBJECT-ORIENTED PROGRAMMING" style="width: 82%;">
+                    </td>
+                    <td><input type="text" name="c8_sem1_22" required placeholder="3" style="width: 15%;"></td>
+                    <td><input type="text" name="g8_sem1_22" required placeholder="X" style="width: 15%;"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="font-style: italic; font-weight: bold;">
+                        GPS:&nbsp;
+                        <input type="text" name="gps_sem1_22" required placeholder="X.XX" style="width: 7%;">&emsp;&emsp;
+                        GPA:&nbsp;
+                        <input type="text" name="gpa_sem1_22" required placeholder="X.XX" style="width: 7%;">
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="X">&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">
+                        Total number of credits earned:&nbsp;
+                        <input type="text" id="credits" name="credits" required placeholder="XX" style="width: 7%;">
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="X">&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="X">&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="X">&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="X">&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        
+    </body>
+</html>

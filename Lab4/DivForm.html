@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css"></style>
+
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset = "utf-8">
+        <title>My Form</title>
+        <script src="http://161.246.5.61/Lab.js"></script>
+           
+    </head>
+
+    <form>
+        <div class="center"> <u>Personal information</u></div>
+        <div class="flex">
+            <div class="left"> <img src="https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg" width="100" height="100"  > </div>
+            <div class="right">
+                <label>Name</label><br>
+                <input id = "name" name = "name" type = "text" size="25" maxlength ="30" placeholder="Name"><br><br>
+                <label for ="Age">Age 0 - 100:</label><br>
+                <input id= "age" name="age" type="range"  min="0" max="100" onchange = "updateAgeValue()">
+                <span id="ageValue">0</span>
+            </div>
+        
+        </div>
+        <div class="flex">
+            <div class="left">
+                <label>profile</label><br>
+                <textarea id="profile" name="profile" rows="4" cols="40"></textarea>
+            </div>
+            <div class="right">
+                <label>Email</label><br>
+                <input id="email" name="email" type="email" size="25" maxlength="30" placeholder="email"><br><br>
+                <label>Phone</label><br>
+                <input id="phone" name="phone" type="tel" size="25" maxlength="30" placeholder="phone">
+            </div>
+        </div>
+        <div class="flex">
+            <div class="left">
+                <br><br>
+                <label>Adress</label>
+                <br>
+                <input id="address1" name="address1" type="text" size="25" maxlength="30" placeholder="address1">
+                <br>
+                <input id="address2" name="address2" type="text" size="25" maxlength="30" placeholder="address2">
+                <br>
+                <select id="country">
+                    <option value="">Select a country</option>
+                            <script>
+                                populateCountries("country");
+                            </script>
+                </select>
+            </div>
+            <div class="right">
+                <p><u>Education</u></p>
+                <br>
+                <label>University</label><br>
+                <input id="university" name="university" type="text" size="25" maxlength="30" placeholder="university">
+            </div>
+
+        </div>
+        <div class="flex">
+            <div class="left"></div>
+        
+        <div class="right">
+            <label>Degree:<p> <br>
+                <input name = "Degree" type = "text" id= "degree" size="25" maxlength ="30" placeholder="Software Engineering"></label>
+        </div>
+        </div>
+        <div class="flex">
+            <div class="left"></div>
+            <div class="right">
+                <label>Year of Graduation:<p> <br>
+                    <input id = "graduationYear" type = "date" >
+                    </label>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="left">
+                Contacts:
+                <label for="Reference">Reference:</label></p>
+                <textarea id="ref" name="reference" rows ="4" cols =40 ></textarea>
+            </label>
+            </div>
+            <div class="right">
+                Skill & Experience:
+                <label for="Reference">Reference:</label></p>
+                <textarea id="ref" name="reference" rows ="4" cols =40 ></textarea>
+            </label>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="left">
+                <label>Favourite Colour:</p>
+                    <input type="color" id="favColour" name="favcolor" value="#000000">
+                </label>
+            </div>
+            <div class="right">
+                <label for="experience">Experience:</label></p>
+                <textarea id="experience" name="experince" rows ="4" ></textarea>
+            </label>
+            </div>
+        </div>
+        <div class="flex">
+            <div align = center>
+                <button onclick="displayResume()"> Submit </button>
+            </div>
+        </div>
+    </form>
+   
+</html>

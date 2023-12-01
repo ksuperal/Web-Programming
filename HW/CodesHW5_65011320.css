@@ -1,0 +1,78 @@
+html{
+    background-color:aquamarine;
+    font:arial;
+}
+.head{
+    text-align: center;
+
+}
+img{
+    max-width: 100%; 
+    height: auto;
+}
+H1{
+    font-size:48px;
+}
+H2{
+    font-size:36px;
+}
+H3{
+    font-size:24px;
+}
+.Curriculum{
+    text-align:center;
+}
+
+.flex {
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+
+}
+.left {
+    padding: 10px;
+    max-width: 50%;
+    height: auto;
+    float: left;
+    margin-left: 0 auto;
+}
+
+.right {
+    padding-left: 20px;
+    padding-top: 10px;
+    color: rgb(0, 0, 0);
+    width: 50%;
+    margin: 0 auto;
+}
+.content{
+    border:1px solid black;
+    width: 400px;
+    height: 40px; 
+}
+.container {
+    max-width: 1080px;
+    min-width: 480px;
+    margin: 0 auto ;
+    padding: 20px;
+    background-color: rgb(206, 235, 225);
+    border: 1px solid #000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width:480px) {
+    .container {
+        
+        padding: 10px;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .left, .right {
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+        text-align: left;
+    }
+    
+}

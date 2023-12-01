@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Example</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Shopping List</h1>
+    <table id="output" width="100%">
+        <thead style="background-color: bisque;">
+            <tr>
+                <th>Item Name</th>
+                <th>Amount</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <br>
+    <button onclick="resetList()">Reset</button><br>
+    <br>
+    <h3>Add List</h3>
+    <label> Name <input type="text" id="nameInput"></label><br>
+    <label> Amount <input type="text" id="amountInput"></label><br>
+    <label> Price <input type="text" id="priceInput"></label><br>
+    <button onclick="addText()">Add</button>
+    <button onclick="clearText()">Clear</button>
+
+    <script>
+        function addText() {
+            const nameInput = document.getElementById("nameInput");
+            const amountInput = document.getElementById("amountInput");
+            const priceInput = document.getElementById("priceInput");
+            const outputElement = document.getElementById("output");
+
+            const newRow = document.createElement("tr");
+            const nameCell = document.createElement("td");
+            const amountCell = document.createElement("td");
+            const priceCell = document.createElement("td");
+
+            nameCell.textContent = nameInput.value;
+            amountCell.textContent = amountInput.value;
+            priceCell.textContent = priceInput.value;
+
+            newRow.appendChild(nameCell);
+            newRow.appendChild(amountCell);
+            newRow.appendChild(priceCell);
+
+            outputElement.querySelector("tbody").appendChild(newRow);
+
+            nameInput.value = '';
+            amountInput.value = '';
+            priceInput.value = '';
+        }
+
+        function clearText() {
+            const nameInput = document.getElementById("nameInput");
+            const amountInput = document.getElementById("amountInput");
+            const priceInput = document.getElementById("priceInput");
+            
+            nameInput.value = '';
+            amountInput.value = '';
+            priceInput.value = '';
+        }
+
+        function resetList() {
+            const outputElement = document.getElementById("output");
+            const tbody = outputElement.querySelector("tbody");
+            while (tbody.firstChild) {
+                tbody.removeChild(tbody.firstChild);
+            }
+        }
+    </script>
+</body>
+</html>

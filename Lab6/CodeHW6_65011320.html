@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            margin-top: 100px;
+            margin-left: 40%;
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            max-width: 300px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .arrow{
+            background-color: rgb(215, 211, 211);
+        }
+    
+    </style>
+    <script src="CodeHW6_65011320.js"></script>
+</head>
+<body>
+    <table >
+        <thead>
+            <tr>
+                <th class="arrow" id="left" onclick="prevMonth()"> < </th>
+                <th colspan="5" id="currentMonthYear"></th>
+                <th class="arrow" id="right" onclick="nextMonth()"> > </th>
+
+            </tr>
+            <tr>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+                <th>Sun</th>
+            </tr>
+        </thead>
+        <tbody id="calendarBody"></tbody>
+    </table>
+    <script>
+        calendar();
+    </script>
+</body>
+</html>

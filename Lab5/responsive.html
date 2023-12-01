@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css"></style>
+
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset = "utf-8">
+        <title>My Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://161.246.5.61/Lab.js"></script>
+
+    </head>
+    <body class="container">
+    <form >
+
+        <div class="center"> <u>Personal information</u></div>
+        <div class="flex">
+            <div class="left"> <img src="https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg" width="40" height="40"  > 
+                <div></div>
+                <label>Profile</label><br>
+                <textarea id="profile" name="profile" rows="4" cols="20"></textarea>
+                <br><br>
+                <label>Address</label>
+                <br>
+                <input id="address1" name="address1" type="text" size="25" maxlength="30" placeholder="address1">
+                <br>
+                <input id="address2" name="address2" type="text" size="25" maxlength="30" placeholder="address2">
+                <br>
+                <select id="country">
+                    <option value="">Select a country</option>
+                            <script>
+                                populateCountries("country");
+                            </script>
+                </select>
+                <div></div>
+                Contacts:
+                <br>
+                <label for="Reference">Reference:</label></p>
+                <textarea id="ref" name="reference" rows ="4" cols =20 ></textarea>
+                </label>
+                <div></div>
+                <label>Favourite Colour:</p>
+                    <input type="color" id="favColour" name="favcolor" value="#000000">
+                </label>
+                <div></div>
+                
+            </div>
+            <div class="right">
+                <label>Name</label><br>
+                <input id = "name" name = "name" type = "text" size="25" maxlength ="30" placeholder="Name"><br><br>
+                <label for ="Age">Age 0 - 100:</label><br>
+                <input id= "age" name="age" type="range"  min="0" max="100" onchange = "updateAgeValue()">
+                <span id="ageValue">0</span>
+                <br>
+                <label>Email</label><br>
+                <input id="email" name="email" type="email" size="25" maxlength="30" placeholder="email"><br><br>
+                <label>Phone</label><br>
+                <input id="phone" name="phone" type="tel" size="25" maxlength="30" placeholder="phone">
+                <br>
+                <p><u>Education</u></p>
+                <br>
+                <label>University</label><br>
+                <input id="university" name="university" type="text" size="25" maxlength="30" placeholder="university">
+                <br>
+                <label>Degree:<p> <br>
+                    <input name = "Degree" type = "text" id= "degree" size="25" maxlength ="30" placeholder="Software Engineering"></label>
+                <br>
+                <label>Year of Graduation:<p>
+                    <input id = "graduationYear" type = "date" >
+                </label>
+                <br>
+                Skill & Experience:
+                <br>
+                <label for="Reference">Reference:</label></p>
+                <textarea id="ref" name="reference" rows ="4" cols =40 ></textarea>
+                </label>
+                <br>
+                <label for="experience">Experience:</label></p>
+                <textarea id="experience" name="experince" rows ="3" ></textarea>
+            </label>
+            </div>
+        </div>
+        
+        
+        <div class="center">
+            <button onclick="displayResume()"> Submit </button>
+        </div>
+       
+    </form>
+    
+   </body>
+   
+</html>

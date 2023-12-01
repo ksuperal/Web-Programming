@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Alarm</title>
+    <meta charset="utf-8">
+    <script src="transcript.js"></script>
+    <style>
+        table {
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        td {
+            border: 0.1px solid black;
+            padding: 4px;
+        }
+
+        p,
+        h1 {
+            text-align: center;
+        }
+
+        .outerbutton {
+            width: 150px;
+            text-align: center;
+        }
+
+        #selectDate {
+            width: 150px;
+            text-align: center;
+        }
+
+        #saveBtn {
+            width: 150px;
+            text-align: center;
+            background-color: rgb(24, 191, 24);
+            color: azure;
+        }
+
+        #exportBtn {
+            width: 150px;
+            text-align: center;
+            background-color: rgb(92, 126, 193);
+            color: azure;
+        }
+
+        #clearStorageBtn {
+            width: 150px;
+            text-align: center;
+            background-color: rgb(191, 24, 24);
+            color: azure;
+        }
+    </style>
+</head>
+
+<body
+    style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 0.25rem;">
+    <h1>Time Schedule</h1>
+    <label for="selectDate">Select Date:</label>
+    <input type="date" id="selectDate">
+    <div id="divAlarm"></div>
+    <br><br>
+    <button id="btn" class="outerbutton"></button>
+    <input type="file" id="importFile" style="display:none">
+    <button id="importBtn" class="outerbutton">Choose File</button>
+    <button id="saveBtn" class="outerbutton">Save Schedule</button>
+    <button id="exportBtn" class="outerbutton">Export Schedule</button>
+    <button id="clearStorageBtn">Clear Storage</button>
+    <br><br>
+    <script src="localStorage.js"></script>
+</body>
+
+</html>

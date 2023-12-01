@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="cal_styles.css">
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+    </head>
+    <body>
+        <table id="myTable">
+            <tr>
+                <td colspan= "4" style="text-align: right;">
+                    <label id="result">0</label>
+                </td>
+            </tr> 
+            <tr>
+                <td id="Backspace"><</td>
+                <td id="/">/</td>
+                <td id="*">*</td>
+                <td id="-" style="font-family: 'Courier New', Courier, monospace; font-weight:bold;">-</td>
+            </tr>
+            <tr>
+                <td id="7">7</td>
+                <td id="8">8</td>
+                <td id="9">9</td>
+                <td id="+" rowspan="2">+</td>
+            </tr>
+            <tr>
+                <td id="4">4</td>
+                <td id="5">5</td>
+                <td id="6">6</td>
+            </tr>
+            <tr>
+                <td id="1">1</td>
+                <td id="2">2</td>
+                <td id="3">3</td>
+                <td id="Enter" rowspan="2">=</td>
+            </tr>
+            <tr>
+                <td id="0" colspan="2">0</td>
+                <td id="c" style="font-weight: bold;">C</td>
+            </tr>
+        </table>
+        <py-script>
+          from js import document
+          from pyodide import create_proxy
+  
+          output = document.getElementById('result')
+          currentExpression = ''
+  
+          def handle_keyup(event):
+              global currentExpression 
+              key = event.key
+              console.log(key)
+  
+              if key.isdigit() or key in ['+', '-', '*', '/']:
+                  currentExpression += str(key)
+                  output.innerHTML = currentExpression
+              elif key in ['Enter', '=']:
+                  try:
+                      result = eval(currentExpression)
+                      output.innerHTML = result
+                      currentExpression = str(result)
+                  except Exception as error:
+                      output.innerHTML = 'Infinity'
+                      currentExpression = ''
+              elif key == 'Backspace':
+                  currentExpression = currentExpression[:-1]
+                  output.innerHTML = currentExpression
+                  if not currentExpression:
+                      output.innerHTML = '0'
+              elif key.lower() == 'c':
+                  currentExpression = ''
+                  output.innerHTML = '0'
+              
+              
+  
+          document.addEventListener('keyup', create_proxy(handle_keyup))
+  
+          def handle_click(event):
+              global currentExpression 
+              element = event.target
+              key = element.id
+  
+              if key == 'Enter':
+                  try:
+                      result = eval(currentExpression)
+                      output.innerHTML = result
+                      currentExpression = str(result)
+                  except Exception as error:
+                      output.innerHTML = 'Error'
+                      currentExpression = ''
+              elif key.lower() == 'c':
+                  currentExpression = ''
+                  output.innerHTML = '0'
+              elif key == 'Backspace':
+                  currentExpression = currentExpression[:-1]
+                  output.innerHTML = currentExpression
+                  if not currentExpression:
+                      output.innerHTML = '0'
+              elif key.isdigit() or key in ['+', '-', '*', '/']:
+                  currentExpression += key
+                  output.innerHTML = currentExpression
+                  if not currentExpression:
+                      currentExpression = '0'
+  
+          buttons = document.querySelectorAll('td')
+          for button in buttons:
+              button.addEventListener('click', create_proxy(handle_click))
+      </py-script>
+    </body>
+</html>

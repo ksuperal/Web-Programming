@@ -1,0 +1,49 @@
+table, th{
+    border:1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    border-style: hidden;
+  }
+  
+  td{
+    font-size: 12px;
+    font-family:papyrus;
+    color:green;
+
+  }
+  p {
+    font-size: 12px;
+    font-family:arial, sans-serif;
+  }
+  .colorful{color:purple}
+
+  label:hover {
+    color: #FF00FF;
+  }
+
+  .flex {
+    width:100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left {
+    width: 50%; 
+    height: 100px; 
+    float: left;
+    text-align: center;
+  }
+
+  .right{
+    margin-left: 50%; 
+    height: 100px;
+    margin-left: 20px;
+    
+
+  }
+
+  .center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+  }
